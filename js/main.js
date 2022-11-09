@@ -123,6 +123,7 @@ optionListEl.addEventListener("click", (evt) => {
 
 function renderErrorModal(arr, evt) {
   if (evt.target.matches(".card-img")) {
+    console.log(evt.target.dataset.id);
     let btnId = Number(evt.target.dataset.id);
     let itemId = arr.find((item) => item.id === btnId);
     if (itemId.symbol_title == questionEl.textContent) {
@@ -139,8 +140,8 @@ function renderErrorModal(arr, evt) {
         document.querySelector(".modal_title").textContent =
           "All of your answers are true";
       }
-      evt.target.parentElement.childNodes[1].style.opacity = "0.2";
-      evt.target.parentElement.childNodes[3].classList.add("d-block");
+      evt.target.parentElement.childNodes[0].style.opacity = "0.2";
+      evt.target.parentElement.childNodes[1].classList.add("show-d");
       getQuestion(arr);
       count += 2;
       scoreCount.textContent = count;

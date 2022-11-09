@@ -48,6 +48,7 @@ main {
   background-color: rgb(15, 126, 141);
 }
 .new_option_item {
+  position: relative;
   padding: 10px;
   margin-top: 20px;
   margin-left: 10px;
@@ -72,7 +73,7 @@ main {
   height: 50px;
   border-radius: 50%;
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 0;
 }
 .card-img {
@@ -204,4 +205,8 @@ main {
     max-width: 320px;
     font-size: 11px;
   }
+}
+
+.show-d {
+  display: block;
 }
