@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+body {
+  font-family: "Merriweather";
+  font-size: 17px;
+}
+.hero {
+  display: none;
+  background-image: url("./images/GameOver.png");
+}
+.game_main_page {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/back-to-future.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.form {
+  max-width: 400px;
+  height: 290px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: rgba(41, 173, 190, 0.534);
+}
+
+.form_btn {
+  padding: 10px 30px;
+  background-color: rgb(42, 141, 128);
+}
+
+.hero_header {
+  background-color: rgb(153, 207, 228);
+}
+.list {
+  background-color: aliceblue;
+}
+main {
+  /* height: 100vh; */
+  margin-top: 80px;
+  display: none;
+  padding-top: 20px;
+  background-image: url("./images/back-to-future.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.time_card {
+  padding: 8px 20px;
+  border-radius: 5px;
+  background-color: rgb(15, 126, 141);
+}
+.new_option_item {
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 10px;
+  background-color: rgb(162, 183, 201);
+}
+
+.timer,
+.count {
+  font-weight: 900;
+}
+.list_wrong {
+  display: none;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.list_true {
+  display: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.card-img {
+  width: 160px;
+  height: 140px;
+}
+.modal_count {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+}
+.modal_error {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+}
+.modal {
+  display: none;
+  width: 100%;
+  /* height: 100vh; */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(158, 155, 155, 0.888);
+}
+.modal-card {
+  max-width: 500px;
+  height: 400px;
+  position: absolute;
+  top: calc(50% - 200px);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(240, 232, 232, 0.826);
+}
+.show-modal {
+  display: block;
+}
+.modal_list {
+  /* width: 400px; */
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+.modal_list_img {
+  width: 130px;
+  height: 130px;
+}
+
+.modal_title {
+  color: #fff;
+  text-align: center;
+  margin-right: 15px;
+}
+.list_img {
+  width: 150px;
+  height: 150px;
+}
+.card-img__success {
+  display: none;
+  width: 160px;
+  height: 140px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+.card-img__error {
+  display: none;
+  width: 160px;
+  height: 140px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+.d-block {
+  display: block;
+}
+
+.error {
+  animation-name: errors;
+  animation-duration: 0.1s;
+}
+
+@keyframes errors {
+  from {
+    transform: translateX(-15px);
+  }
+  to {
+    transform: translateX(15px);
+  }
+}
+@media screen and (max-width: 1024px) {
+  .game_title {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header_inner {
+    flex-direction: column;
+  }
+  .game_title {
+    font-size: 20px;
+    text-align: center;
+  }
+  main {
+    padding-top: 90px;
+  }
+  .modal-card {
+    top: 80px;
+  }
+}
+@media screen and (max-width: 439px) {
+  .list {
+    justify-content: center;
+  }
+  .modal-btn {
+    max-width: 320px;
+    font-size: 11px;
+  }
+}
